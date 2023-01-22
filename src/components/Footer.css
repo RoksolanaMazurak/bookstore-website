@@ -1,0 +1,42 @@
+.footer {
+	background-color: var(--dark-blue);
+}
+
+.footer_container {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem 5em;
+	margin-top: 5em;
+
+}
+
+.footer__heading {
+	color: var(--accent);
+	margin-bottom: 1em;
+}
+
+.footer__text {
+	color: #fff;
+	margin-bottom: 0.5em;
+}
+
+.social_media {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social_media__wrapper {
+	margin-right: 2em;
+}
+
+.credits__wrapper {
+	text-align: center;
+	padding: 1em;
+}
+
+.credits {
+	color: rgba(255, 255, 255, 0.4);
+	font-family: 'Roboto';
+	font-weight: 400;
+}

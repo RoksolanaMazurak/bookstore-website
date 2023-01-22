@@ -1,0 +1,26 @@
+input {
+	padding: 10px 15px;
+	border: 2px solid var(--dark-blue);
+	border-radius: 25px;
+	width: 25%;
+
+}
+
+input::placeholder {
+	color: var(--light-grey);
+}
+
+.input:focus,
+.input:active,
+.input:hover {
+	border-color: var(--accent);
+}
+
+#search_button {
+	background: none;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 85%;
+	top: 2em;
+}
