@@ -1,0 +1,32 @@
+.card-wrapper {
+	padding: 0.5em 2em 1.5em;
+	background-color: #fff;
+	border: 1px solid #050645;
+	border-radius: 25px;
+	text-align: center;
+	width: 216px;
+}
+
+.genre-tag {
+	background-color: var(--light-blue);
+	border-radius: 25px;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	color: var(--grey);
+}
+
+.card-header {
+	margin: 2em 0;
+	font-size: 1.5rem;
+}
+
+.card_subheading {
+	font-size: 1.2rem;
+	margin: 0.2rem 0;
+}
+
+.card_price {
+	margin-bottom: 25px;
+	font-size: 1.7rem;
+	font-weight: 400;
+}
