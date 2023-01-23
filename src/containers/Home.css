@@ -1,0 +1,42 @@
+.hero__container {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em 5em 5em 5em;
+	padding: 10em 5em 3em 5em;
+	background: var(--blue);
+	border-radius: 25px;
+}
+
+.hero__second_header {
+	margin-left: 1.65em;
+}
+
+.hero__text {
+	font-size: 1.5rem;
+	padding-top: 2em;
+	padding-bottom: 2.5em;
+}
+
+.button_arrow {
+	padding-left: 2em;
+}
+
+.section_header {
+	text-align: center;
+}
+
+.section_subheader {
+	font-size: 1.5rem;
+	margin-top: 0.5em;
+}
+
+
+
+.star_icon {
+	margin-left: 1rem;
+}
+
+#load_more-btn {
+	margin: 0 auto;
+	display: block;
+}

@@ -1,0 +1,21 @@
+.item {
+	text-align: center;
+}
+
+.item__image {
+	margin-bottom: 1.5em
+}
+
+.item__heading_header {
+	font-weight: 300;
+}
+
+.item__heading_header:hover {
+	color: var(--accent);
+}
+
+.item__heading_subheader {
+	margin-top: 0.5em;
+	font-size: 1.3rem;
+	font-weight: 400;
+}

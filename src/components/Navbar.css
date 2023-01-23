@@ -1,0 +1,20 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 25px 147px 0 147px;
+}
+
+.navbar__links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar__links a {
+	color: var(--dark-blue);
+	margin-left: 100px;
+}
+
+.navbar__links a:hover {
+	color: var(--accent);
+}

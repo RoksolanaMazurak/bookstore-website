@@ -1,0 +1,104 @@
+:root {
+	--dark-blue: #050645;
+	--blue: #CBE2FF;
+	--light-blue: #E5F1FF;
+	--light-grey: #AABACF;
+	--accent: #E03268;
+	--grey: #4A678B;
+}
+
+html {
+	font-size: 14px;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: 'Rowdies', 'Roboto', sans-serif;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+
+	font-weight: 500;
+}
+
+h1 {
+	color: var(--dark-blue);
+	font-size: 4.3em;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 2.2rem;
+	color: var(--dark-blue);
+}
+
+h3 {
+	font-size: 1.7em;
+	font-weight: 400;
+	color: var(--dark-blue);
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+	color: var(--accent);
+}
+
+span {
+	color: var(--accent);
+}
+
+p {
+	color: var(--grey);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+button {
+	background-color: var(--dark-blue);
+	border: none;
+	padding: 1em 3.5em;
+	color: #fff;
+	font-family: 'Roboto';
+	font-weight: 500;
+	border-radius: 25px;
+}
+
+button::after {
+	background-image: url("./images/arrow.svg");
+}
+
+button:hover {
+	background-color: var(--accent);
+}
+
+hr {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--light-blue);
+	padding: 4em 8em;
+	margin: 2em 5em;
+	border-radius: 25px;
+}
+
