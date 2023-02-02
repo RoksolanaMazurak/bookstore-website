@@ -1,26 +1,57 @@
-function FilterBar() {
+import React, { useState } from "react";
+
+function FilterBar(props) {
+  const [filteredGenre, setFilteredGenre] = useState(null);
+  const [filteredPrice, setFilteredPrice] = useState(null);
+  const [filteredAvailability, setFilteredAvailability] = useState(null);
+
+  const priceFilterHandler = (event) => {
+    setFilteredPrice(event.target.value);
+  };
+
+  const availabilityFilterHandler = (event) => {
+    setFilteredAvailability(event.target.value);
+  };
+
+  const genreFilterHandler = (event) => {
+    setFilteredGenre(event.target.value);
+  };
+
+  const applyFilterHandler = () => {
+    const filters = {
+      price: filteredPrice,
+      availability: filteredAvailability,
+      genre: filteredGenre,
+    };
+
+    props.onChangeFilter(filters);
+  };
+
   return (
     <>
       <div className="filter_container">
         <div>
-          <select name="price" id="price">
-            <option value="0">Filter by price</option>
-            <option value="1">From high to low</option>
-            <option value="2">From low to high</option>
+          <select name="price" id="price" onChange={priceFilterHandler}>
+            <option value="">Filter by price</option>
+            <option value="from high to low">From high to low</option>
+            <option value="from low to high">From low to high</option>
           </select>
-          <select name="alphabet" id="alphabet">
-            <option value="0">Filter by alphabet</option>
-            <option value="1">A-Z</option>
-            <option value="2">Z-A</option>
+          <select
+            name="availability"
+            id="availability"
+            onChange={availabilityFilterHandler}
+          >
+            <option value="">Filter by availability</option>
+            <option value="avaible">only avaible</option>
           </select>
-          <select name="genre" id="genre">
-            <option value="0">Filter by genre</option>
-            <option value="1">Novel</option>
-            <option value="2">Fantasy</option>
-            <option value="3">Clasic</option>
+          <select name="genre" id="genre" onChange={genreFilterHandler}>
+            <option value="">Filter by genre</option>
+            <option value="Novel">Novel</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Clasic">Clasic</option>
           </select>
         </div>
-        <button>Apply</button>
+        <button onClick={applyFilterHandler}>Apply</button>
       </div>
     </>
   );

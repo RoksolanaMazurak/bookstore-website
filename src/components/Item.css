@@ -1,5 +1,6 @@
 .item {
 	text-align: center;
+	margin-left: 3rem;
 }
 
 .item__image {
@@ -8,6 +9,8 @@
 
 .item__heading_header {
 	font-weight: 300;
+	margin-bottom: 0.5rem;
+	width: 15rem;
 }
 
 .item__heading_header:hover {
@@ -15,7 +18,8 @@
 }
 
 .item__heading_subheader {
-	margin-top: 0.5em;
+	width: 15rem;
 	font-size: 1.3rem;
 	font-weight: 400;
+	margin-bottom: 2em;
 }

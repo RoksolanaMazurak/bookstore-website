@@ -1,8 +1,4 @@
 import "./Footer.css";
-import logo from "../images/logo_light.svg";
-import fb_icon from "../images/fb_icon.svg";
-import inst_icon from "../images/inst_icon.svg";
-import twitter_icon from "../images/twitter_icon.svg";
 
 function Footer() {
   return (
@@ -13,16 +9,16 @@ function Footer() {
           <p className="footer__text">bookstore.corp@gmail.com</p>
           <p className="footer__text">+(44) 712-316-4504</p>
         </div>
-        <img src={logo}></img>
+        <img src="../images/logo_light.svg" alt="logo"></img>
         <div className="social_media">
           <div className="social_media__wrapper">
-            <img src={fb_icon} />
+            <img src="../images/fb_icon.svg" alt="facebook" />
           </div>
           <div className="social_media__wrapper">
-            <img src={inst_icon} />
+            <img src="../images/inst_icon.svg" alt="instagram" />
           </div>
           <div className="social_media__wrapper">
-            <img src={twitter_icon} />
+            <img src="../images/twitter_icon.svg" alt="twitter" />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@
 	border-radius: 25px;
 	text-align: center;
 	width: 216px;
+	margin: 0 1rem 3rem 0;
 }
 
 .genre-tag {
@@ -26,7 +27,10 @@
 }
 
 .card_price {
-	margin-bottom: 25px;
 	font-size: 1.7rem;
 	font-weight: 400;
+}
+
+.card_availability {
+	margin: 0.5rem 0 1rem 0;
 }

@@ -1,6 +1,6 @@
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	align-items: baseline;
 	padding: 25px 147px 0 147px;
 }

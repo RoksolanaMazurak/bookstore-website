@@ -30,6 +30,10 @@
 	margin-left: 1rem;
 }
 
+#item-container {
+	padding-left: 1rem;
+}
+
 #load_more-btn {
 	margin: 0 auto;
 	display: block;
