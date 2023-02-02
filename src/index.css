@@ -81,10 +81,6 @@ button {
 	border-radius: 25px;
 }
 
-button::after {
-	background-image: url("./images/arrow.svg");
-}
-
 button:hover {
 	background-color: var(--accent);
 }
@@ -102,3 +98,16 @@ hr {
 	border-radius: 25px;
 }
 
+select {
+	background: #FFFFFF;
+	padding: 0.7em;
+	border: 1px solid #050645;
+	border-radius: 10px;
+	margin-right: 1em;
+}
+
+.filter_container {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em 10em;
+}

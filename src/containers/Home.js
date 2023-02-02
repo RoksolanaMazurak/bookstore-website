@@ -1,8 +1,5 @@
 import "./Home.css";
-import hero_img from "../images/hero_image.svg";
-import arrow from "../images/arrow.svg";
 import Items from "../components/Items";
-import star_icon from "../images/star_icon.svg";
 
 function Home() {
   const data = [
@@ -44,17 +41,18 @@ function Home() {
             welcome to our bookstore! <br />
             we have the largest choice of books!
           </p>
-          <button>
-            Go to catalog
-            <img src={arrow} alt="arrow" className="button_arrow" />
-          </button>
+          <button id="go-to-catalog-btn">Go to catalog</button>
         </div>
-        <img src={hero_img} alt="Illustration" />
+        <img src="../images/hero_image.svg" alt="Illustration" />
       </div>
       <div className="section_header">
         <h2>
           Upcoming books
-          <img src={star_icon} alt="star_icon" className="star_icon" />
+          <img
+            src="../images/star_icon.svg"
+            alt="star_icon"
+            className="star_icon"
+          />
         </h2>
         <p className="section_subheader">for March</p>
       </div>
