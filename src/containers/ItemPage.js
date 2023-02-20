@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./ItemPage.css";
-import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../redux/cartSlice";
+import { Link, useParams } from "react-router-dom";
 import { getItemById } from "../api/api";
 import Loader from "../components/Loader";
 
@@ -8,6 +10,9 @@ function ItemPage() {
   const [item, setItem] = useState([]);
   const { id } = useParams();
   const [loader, setLoader] = useState(true);
+  const [count, setCount] = useState(1);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     getItemById(id).then((res) => {
@@ -15,6 +20,14 @@ function ItemPage() {
       setLoader(false);
     });
   }, [id]);
+
+  const addItemHandler = () => {
+    if (count >= 1) {
+      dispatch(cartActions.addToCart({ cartItem: item, count: count }));
+    } else {
+      alert("Item quantity can`t be 0 or less");
+    }
+  };
 
   return (
     <>
@@ -39,6 +52,10 @@ function ItemPage() {
             placeholder="Enter quantity"
             type="number"
             min="1"
+            value={count}
+            onChange={(event) => {
+              setCount(event.target.value);
+            }}
           ></input>
           <select className="item-select">
             <option value="0">Special bookmark</option>
@@ -48,10 +65,13 @@ function ItemPage() {
           <div className="price-wrapper">
             <h2>Price: {item.price} $</h2>
             <div className="item-buttons">
-              <button className="item-button">Go back</button>
+              <Link to="/catalog">
+                <button className="item-button">Go back</button>
+              </Link>
               <button
                 disabled={item.availability === "not available" ? true : false}
                 className="item-add-button"
+                onClick={addItemHandler}
               >
                 Add to cart
               </button>
