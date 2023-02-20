@@ -1,4 +1,6 @@
 input {
+	float: rights;
+	margin-left: 77em;
 	padding: 10px 15px;
 	border: 2px solid var(--dark-blue);
 	border-radius: 25px;
@@ -16,11 +18,21 @@ input::placeholder {
 	border-color: var(--accent);
 }
 
-#search_button {
+#search_button,
+#cancel_button {
 	background: none;
 	border: none;
 	outline: none;
 	position: absolute;
-	left: 85%;
-	top: 2em;
+
+}
+
+#search_button {
+	left: 94.5rem;
+	top: 4em;
+}
+
+#cancel_button {
+	left: 97rem;
+	top: 4.4em;
 }

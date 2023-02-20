@@ -34,8 +34,8 @@ ul {
 a {
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
-
 	font-weight: 500;
+	color: #fff;
 }
 
 h1 {
@@ -91,23 +91,26 @@ hr {
 
 .container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	background-color: var(--light-blue);
-	padding: 4em 8em;
+	padding: 3em 8em 0 8em;
 	margin: 2em 5em;
 	border-radius: 25px;
+	flex-wrap: wrap;
 }
 
 select {
 	background: #FFFFFF;
 	padding: 0.7em;
-	border: 1px solid #050645;
+	border: 1px solid var(--dark-blue);
 	border-radius: 10px;
 	margin-right: 1em;
+	border-radius: 25px;
+	width: 15rem;
 }
 
 .filter_container {
 	display: flex;
 	justify-content: space-between;
-	margin: 2em 10em;
+	margin: 3em 10em 0 10em;
 }
