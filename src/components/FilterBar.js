@@ -19,12 +19,13 @@ function FilterBar(props) {
 
   const applyFilterHandler = () => {
     const filters = {
-      price: filteredPrice,
+      sort: filteredPrice,
       availability: filteredAvailability,
       genre: filteredGenre,
     };
 
     props.onChangeFilter(filters);
+    console.log(filters);
   };
 
   return (
@@ -33,8 +34,8 @@ function FilterBar(props) {
         <div>
           <select name="price" id="price" onChange={priceFilterHandler}>
             <option value="">Filter by price</option>
-            <option value="from high to low">From high to low</option>
-            <option value="from low to high">From low to high</option>
+            <option value="0">From high to low</option>
+            <option value="1">From low to high</option>
           </select>
           <select
             name="availability"
@@ -42,13 +43,13 @@ function FilterBar(props) {
             onChange={availabilityFilterHandler}
           >
             <option value="">Filter by availability</option>
-            <option value="avaible">only avaible</option>
+            <option value="available">only available</option>
           </select>
           <select name="genre" id="genre" onChange={genreFilterHandler}>
             <option value="">Filter by genre</option>
-            <option value="Novel">Novel</option>
-            <option value="Fantasy">Fantasy</option>
-            <option value="Clasic">Clasic</option>
+            <option value="novel">Novel</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="clasic">Clasic</option>
           </select>
         </div>
         <button onClick={applyFilterHandler}>Apply</button>
