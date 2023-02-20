@@ -3,6 +3,7 @@
 	justify-content: space-between;
 	padding: 100px 140px;
 	margin: 0 auto;
+	min-height: 600px;
 }
 
 .item-image-container {
@@ -68,4 +69,9 @@
 
 .item-add-button {
 	background-color: var(--accent);
+}
+
+.item-add-button:disabled {
+	background-color: var(--light-blue);
+	color: var(--grey)
 }
